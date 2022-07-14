@@ -4,10 +4,62 @@
 @tailwind components;
 @tailwind utilities;
 
-/* html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-} */
+@layer base {
+  main {
+    @apply 2xl:px-2xl;
+    @apply xl:px-xl;
+    @apply lg:px-lg;
+    @apply px-m;
+  }
+  h1 {
+    @apply text-4xl;
+    @apply font-montserrat;
+    @apply font-bold;
+    @apply mb-s;
+    @apply leading-snug;
+    @apply text-center;
+    @apply md:text-left;
+  }
+  button {
+    @apply text-sub;
+    @apply bg-main;
+    @apply font-montserrat;
+    @apply font-bold;
+    @apply w-fit;
+    @apply px-8;
+    @apply py-2.5;
+    @apply my-s;
+    @apply rounded;
+  }
+}
+
+@layer utilities {
+  .center-container-desktop {
+    @apply lg:px-lg;
+    @apply xl:px-xl;
+    @apply grid;
+    @apply grid-cols-3;
+    @apply place-content-center;
+  }
+
+  .center-container-mobile {
+    @apply flex;
+    @apply flex-col;
+    @apply justify-center;
+  }
+
+  .center-component {
+    @apply flex;
+    @apply flex-col;
+    @apply justify-center;
+    @apply items-center;
+    @apply md:items-start;
+  }
+
+  .svg-animation {
+    @apply order-first;
+    @apply place-self-center;
+    @apply md:order-none;
+    @apply w-2/5;
+  }
+}

@@ -1,5 +1,5 @@
 const MainHeading = ({ children }) => {
-  return <h1 className="font-montserrat">{children}</h1>
+  return <h1>{children}</h1>
 }
 
 export default MainHeading
