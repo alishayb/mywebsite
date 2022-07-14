@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="debug-screens min-h-screen flex flex-col items-center overscroll-auto pt-lg">
       <Head>
-        <title>Create Next App</title>
+        <title>Alisha Yumna Bakri</title>
         <meta name="description" content="Personal website of Alisha Yumna Bakri" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
