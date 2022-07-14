@@ -1,9 +1,10 @@
+import LandingContainer from '@components/container/LandingContainer'
 import Head from 'next/head'
-import LandingContainer from '../components/container/LandingContainer'
+import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div className="container debug-screens">
+    <div className="debug-screens min-h-screen flex flex-col items-center overscroll-auto pt-lg">
       <Head>
         <title>Create Next App</title>
         <meta name="description" content="Personal website of Alisha Yumna Bakri" />
@@ -12,9 +13,11 @@ export default function Home() {
 
       <main className="container">
         <LandingContainer />
+        
       </main>
 
-      <footer className="">
+      <footer className="mt-auto">
+        <img src="/asset/landing-page-wave.svg" />
       </footer>
     </div>
   )
