@@ -1,10 +1,9 @@
 import LandingContainer from '@components/container/LandingContainer'
 import Head from 'next/head'
-import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div className="debug-screens min-h-screen flex flex-col items-center overscroll-auto pt-lg">
+    <div className="min-h-screen flex flex-col items-center overscroll-auto pt-lg">
       <Head>
         <title>Alisha Yumna Bakri</title>
         <meta name="description" content="Personal website of Alisha Yumna Bakri" />
