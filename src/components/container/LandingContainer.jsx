@@ -11,7 +11,7 @@ const LandingContainer = () => {
         <p className="text-center md:text-left">
           In the meantime, you can look me through LinkedIn:
         </p>
-        <Button href="https://www.linkedin.com/in/alisha-yumna-bakri-922682166/">Alisha Yumna Bakri</Button>
+        <Button to="https://www.linkedin.com/in/alisha-yumna-bakri-922682166/">Alisha Yumna Bakri</Button>
       </div>
       <div className="svg-animation animate-bounce drop-shadow-xl md:drop-shadow-2xl text-main">
         <FontAwesomeIcon icon="fa-solid fa-wrench" />
