@@ -2,29 +2,41 @@
   position: fixed;
   inset: 0;
   z-index: -1;
-
   overflow: hidden;
-
   background: #050505;
-
   pointer-events: none;
 }
 
 .mesh-svg {
-  width: 100%;
-  height: 100%;
-
+  position: absolute;
+  top: -25%;
+  left: -25%;
+  width: 150%;
+  height: 150%;
   display: block;
-
-  overflow: visible;
+  will-change: transform;
 }
 
 .mesh-line {
   fill: none;
-
   stroke: rgba(215, 215, 215, 0.16);
-
   stroke-width: 2.5px;
-
   vector-effect: non-scaling-stroke;
+}
+
+.mesh-layer-0 { animation: drift-a 9s ease-in-out infinite alternate; }
+.mesh-layer-1 { animation: drift-b 12s ease-in-out infinite alternate; }
+.mesh-layer-2 { animation: drift-c 15s ease-in-out infinite alternate; }
+
+@keyframes drift-a {
+  from { transform: translate3d(-8%, -6%, 0) scale(1) rotate(-1.5deg); }
+  to   { transform: translate3d(8%, 6%, 0) scale(1.12) rotate(1.5deg); }
+}
+@keyframes drift-b {
+  from { transform: translate3d(7%, 8%, 0) scale(1.1) rotate(1deg); }
+  to   { transform: translate3d(-9%, -7%, 0) scale(1) rotate(-2deg); }
+}
+@keyframes drift-c {
+  from { transform: translate3d(-6%, 7%, 0) scale(1.05) rotate(-2.5deg); }
+  to   { transform: translate3d(9%, -8%, 0) scale(1.15) rotate(2deg); }
 }
