@@ -3,7 +3,7 @@
 .navhome {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 nav {
@@ -160,6 +160,10 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+  .navhome {
+    height: 100dvh;
+  }
+
   section#work {
     .cards {
       grid-template-columns: repeat(1, minmax(0, 1fr));
