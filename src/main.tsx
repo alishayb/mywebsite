@@ -1,0 +1,12 @@
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import App from "./App.tsx";
+import "./index.css";
+import MeshBackground from "./mesh/MeshBackground.tsx";
+
+createRoot(document.getElementById("root")!).render(
+  <StrictMode>
+    <MeshBackground />
+    <App />
+  </StrictMode>,
+);

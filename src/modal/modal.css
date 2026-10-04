@@ -1,0 +1,54 @@
+.toast {
+  position: fixed;
+  bottom: 4em;
+  left: 9em;
+  translate: -50% 0;
+  padding: 0.5em 1em;
+}
+
+@media screen and (max-width: 1024px) {
+  .toast {
+    left: 50%;
+  }
+}
+
+dialog {
+  all: unset;
+  background-color: rgb(25, 25, 25);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 16px;
+}
+
+.modal {
+  position: absolute;
+  width: 90vw;
+  height: 90vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 36px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1024px) {
+  .modal {
+    padding: 32px 32px 16px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .modal {
+    padding: 32px 32px 16px;
+  }
+}
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(45, 45, 45, 0.8);
+  z-index: 20;
+}

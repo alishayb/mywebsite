@@ -1,0 +1,168 @@
+@import url(./index.css);
+
+.navhome {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+nav {
+  top: 0;
+  padding: 1.5em 0px 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  h6 {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 14px;
+    font-weight: 600;
+
+    li {
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+section {
+  padding: 4em 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+section#home {
+  justify-content: center;
+  gap: 24px;
+  flex-grow: 1;
+  padding: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+  .name {
+    font-family: "Caveat", cursive;
+    font-size: 28px;
+    color: #f5c542;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 12px;
+  }
+
+  a {
+    display: inline-block;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px 18px;
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--black-08);
+    font-weight: 500;
+    opacity: 1;
+
+    &.secondary {
+      background-color: rgba(255, 255, 255, 0.07);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: white;
+    }
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.6;
+    }
+  }
+}
+
+section#work {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: auto auto;
+    gap: 16px;
+    padding: 1em 0px;
+    max-width: 100%;
+
+    > div {
+      display: grid;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .cards {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+}
+
+section#skills {
+  gap: 18px;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    li {
+      font-weight: 600;
+      font-size: 16px;
+    }
+  }
+}
+
+section#contact {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 12px;
+  }
+
+  a {
+    width: fit-content;
+    font-weight: 600;
+    padding-bottom: 0.4em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid transparent;
+
+    span:last-child {
+      rotate: -90deg;
+    }
+
+    &:hover {
+      cursor: pointer;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.75);
+    }
+  }
+}
+
+footer {
+  padding: 1em 0px;
+  p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section#work {
+    .cards {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
+}
