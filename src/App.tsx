@@ -209,6 +209,7 @@ The app allows users to upload recipes from photos and PDFs and ask cooking-rela
           <li>Styling — Tailwind CSS, Ant Design, SCSS</li>
           <li>AI Tools — Claude, Copilot, Gemini</li>
           <li>Design — Figma & Sketch</li>
+          <li>Deployment & Version Control — Vercel, GitHub Pages, Git</li>
         </ul>
       </motion.section>
       <motion.section
