@@ -202,9 +202,9 @@ The app allows users to upload recipes from photos and PDFs and ask cooking-rela
           and turning it into an adaptive and purposeful interface.
         </p>
         <ul>
-          <li>Modern Frontend Frameworks — React, Next.js, Node.js, Vite</li>
+          <li>Frameworks — React, Next.js, Node.js, Vite</li>
           <li>
-            Frontend Fundamentals — JavaScript (ES6+), TypeScript, HTML, CSS
+            Fundamentals — JavaScript (ES6+), TypeScript, HTML, CSS
           </li>
           <li>Styling — Tailwind CSS, Ant Design, SCSS</li>
           <li>AI Tools — Claude, Copilot, Gemini</li>
