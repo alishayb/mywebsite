@@ -46,7 +46,7 @@ function App() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
         >
-          <h6>ALISHA / Frontend</h6>
+          <h6>ALISHA / DEVELOPER</h6>
           <ul>
             <li>
               <a href="#work">Work</a>
@@ -62,12 +62,12 @@ function App() {
           initial="hidden"
           animate="visible"
         >
-          <p className="accent">Frontend developer · Jakarta, Indonesia</p>
+          <p className="accent">Web developer · Jakarta, Indonesia</p>
           <h1>
             Crafting refined <br /> interfaces for the web.
           </h1>
           <p>
-            I&apos;m <span className="name">Alisha</span> , a frontend developer
+            I&apos;m <span className="name">Alisha</span> , a web developer
             who focused on building adaptive and functional <br /> digital
             product tailored to achieve business objectives.
           </p>
@@ -140,7 +140,14 @@ SmartThings is Samsung's IoT platform, used by millions to connect and control s
                 ],
               }}
               detail={{
-                skills: ["React", "Vite", "Figma", "Framer Motion", "AI Integration", "AI Chatbot"],
+                skills: [
+                  "React",
+                  "Vite",
+                  "Figma",
+                  "Framer Motion",
+                  "AI Integration",
+                  "AI Chatbot",
+                ],
                 description: `I built a personal recipe assistant powered by AI.
 
 The app allows users to upload recipes from photos and PDFs and ask cooking-related questions, with answers generated from their own saved recipe collection.`,
@@ -203,9 +210,7 @@ The app allows users to upload recipes from photos and PDFs and ask cooking-rela
         </p>
         <ul>
           <li>Frameworks — React, Next.js, Node.js, Vite</li>
-          <li>
-            Fundamentals — JavaScript (ES6+), TypeScript, HTML, CSS
-          </li>
+          <li>Fundamentals — JavaScript (ES6+), TypeScript, HTML, CSS</li>
           <li>Styling — Tailwind CSS, Ant Design, SCSS</li>
           <li>AI Tools — Claude, Copilot, Gemini</li>
           <li>Design — Figma & Sketch</li>
