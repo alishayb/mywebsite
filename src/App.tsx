@@ -12,6 +12,9 @@ import recipiePreview1 from "/recipie preview 1.png";
 import recipiePreview2 from "/recipie preview 2.png";
 import recipiePreview3 from "/recipie preview 3.png";
 import recipiePreview4 from "/recipie preview 4.png";
+import bioUIPreview1 from "/biology ui preview 1.png";
+import bioUIPreview2 from "/biology ui preview 2.png";
+import bioUIPreview3 from "/biology ui preview 3.png";
 import smartThingsLogo from "/smartthings-logo.png";
 
 const sectionVariants = {
@@ -67,9 +70,9 @@ function App() {
             Crafting refined <br /> interfaces for the web.
           </h1>
           <p>
-            I&apos;m <span className="name">Alisha</span> , a web developer
-            who focused on building adaptive and functional <br /> digital
-            product tailored to achieve business objectives.
+            I&apos;m <span className="name">Alisha</span> , a web developer who
+            focused on building adaptive and functional <br /> digital product
+            tailored to achieve business objectives.
           </p>
           <div className="buttons">
             <a href="#work">See selected work</a>
@@ -125,6 +128,28 @@ SmartThings is Samsung's IoT platform, used by millions to connect and control s
               workType="Fulltime"
             />,
             <Card
+              title="Faculty of Biology, Universitas Indonesia"
+              description="Academic website for the Faculty of Biology, Universitas Indonesia"
+              role="Wordpress Developer"
+              year={[2024]}
+              img={{
+                displaySrc: bioUIPreview1,
+                displayAlt: "Faculty of Biology, Universitas Indonesia",
+                additionals: [bioUIPreview1, bioUIPreview2, bioUIPreview3],
+              }}
+              detail={{
+                link: "https://biologi.sci-ui.id/en/",
+                skills: ["Wordpress", "CSS"],
+                description: `Developed and customized the official academic website for the Master and Doctor pages for Faculty of Biology at Universitas Indonesia, presenting departmental programs, faculty research, and student resources in a clean, accessible layout.`,
+                points: [
+                  "Designed dedicated academic program pages for Master's and Doctoral degrees.",
+                  "Customized WordPress layouts to streamline navigation for prospective students and faculty.",
+                  "Ensured multi-language accessibility and responsive design for mobile devices.",
+                ],
+              }}
+              workType="Contract"
+            />,
+            <Card
               title="Recipie"
               description="AI-powered app for homecook to help them answers cooking and recipes questions"
               role="Full-Stack Developer"
@@ -160,6 +185,7 @@ The app allows users to upload recipes from photos and PDFs and ask cooking-rela
               }}
               workType="Case Study"
             />,
+
             <Card
               title="My Home Korea"
               description="Platform for foreigners searching to rent and buy properties in South Korea."
